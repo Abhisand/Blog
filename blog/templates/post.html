@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{%  block title %}
+ Learnsomething:   {{ post.title }}
+{% endblock %}
+{% block content %}
+    <a href="/">Go Back to Index</a>
+    <br>
+    <h2>{{ post.title }}</h2>
+    <div>
+        {{ post.content }}
+    </div>
+{% endblock %}
